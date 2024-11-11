@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập JS buổi 16</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bài tập mảng số nguyên</h1>
+      <label for="inputArray">Nhập mảng số nguyên (cách nhau dấu phẩy):</label>
+      <input type="text" id="inputArray" />
+      <button onclick="addToArray()">Thêm vào mảng</button>
+      <p class="result" id="addToArray"></p>
+
+      <button onclick="sumPositive()">1. Tổng các số dương</button>
+      <p class="result" id="sumPositive"></p>
+
+      <button onclick="countPositive()">2. Đếm số dương</button>
+      <p class="result" id="countPositive"></p>
+
+      <button onclick="findMin()">3. Số nhỏ nhất</button>
+      <p class="result" id="findMin"></p>
+
+      <button onclick="findMinPositive()">4. Số dương nhỏ nhất</button>
+      <p class="result" id="findMinPositive"></p>
+
+      <button onclick="findLastEven()">5. Số chẵn cuối cùng</button>
+      <p class="result" id="findLastEven"></p>
+
+      <label for="position1">Nhập vào 2 vị trí muốn đổi chỗ:</label>
+      <input
+        type="number"
+        id="position1"
+        style="width: 48%; display: inline-block"
+      />
+      <input
+        type="number"
+        id="position2"
+        style="width: 48%; display: inline-block"
+      />
+      <button onclick="swapPosition()">6. Đổi chỗ 2 giá trị</button>
+      <p class="result" id="swapPosition"></p>
+
+      <button onclick="sortAscending()">7. Sắp xếp tăng dần</button>
+      <p class="result" id="sortAscending"></p>
+
+      <button onclick="firstPrime()">8. Số nguyên tố đầu tiên</button>
+      <p class="result" id="firstPrime"></p>
+
+      <label for="inputArray2"
+        >Nhập thêm mảng số thực (cách nhau dấu phẩy):</label
+      >
+      <input type="text" id="inputArray2" />
+      <button onclick="countPrime()">9. Số lượng số nguyên</button>
+      <p class="result" id="countPrime"></p>
+
+      <button onclick="comparePosNeg()">
+        10. So sánh số lượng số dương và số âm
+      </button>
+      <p class="result" id="comparePosNeg"></p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
