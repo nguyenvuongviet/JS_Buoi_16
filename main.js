@@ -71,18 +71,22 @@ function findLastEven() {
 function swapPosition() {
   const position1 = parseInt(document.getElementById("position1").value);
   const position2 = parseInt(document.getElementById("position2").value);
-  result = `<p>Mảng: ${array}</p>`;
-  const temp = array[position1];
-  array[position1] = array[position2];
-  array[position2] = temp;
-  result += `Mảng sau khi đổi vị trí: ${array}`;
+  let result = `<p>Mảng: ${array}</p>`;
+  let array1 = array.slice();
+  console.log(array1);
+  const temp = array1[position1];
+  array1[position1] = array1[position2];
+  array1[position2] = temp;
+  console.log(array);
+  result += `Mảng sau khi đổi vị trí: ${array1}`;
   document.getElementById("swapPosition").innerHTML = result;
 }
 
 function sortAscending() {
   result = `<p>Mảng: ${array}</p>`;
-  array.sort((a, b) => a - b);
-  result += ` Mảng sau khi sắp xếp tăng dần: ${array}`;
+  let array1 = array.slice();
+  array1.sort((a, b) => a - b);
+  result += ` Mảng sau khi sắp xếp tăng dần: ${array1}`;
   document.getElementById("sortAscending").innerHTML = result;
 }
 
